@@ -34,22 +34,22 @@ function MainContent(){
 
 function Header(){
     return (
-        <div>
+        <>
             <div>
-                <img src="/img/react-log.png" width="40px"/>
+                <img src="/img/react-log.png" width="40px" alt="react Logo"/>
             </div>
             <div>
                 <h1 className="header">Fun Facts (Static React Page)</h1>
             </div>
-        </div>
+        </>
     )
 }
 
 function Footer(){
 
     return (
-        <div>
-            Footer goes here
-        </div>
+        <small>
+             &#169; 2026 Raja
+        </small>
     );
 }
