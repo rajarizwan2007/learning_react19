@@ -53,3 +53,11 @@ function Footer(){
         </small>
     );
 }
+
+function Page(){
+    <>
+    <Header />
+    <MainContent />
+    <Footer />
+    </>
+}
