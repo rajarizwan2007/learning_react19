@@ -1,16 +1,37 @@
-# React + Vite
+# Learning React 19
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My day-by-day practice while learning React 19, built with [Vite](https://vite.dev).
 
-Currently, two official plugins are available:
+## What's inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Page | Entry | What it practises |
+|---|---|---|
+| `index.html` | `src/main.jsx` | First components: a Bootstrap navbar and a main content block rendered with `createRoot` |
+| `react_facts_project.html` | `src/react_facts_project.jsx` | "React facts" page composed from `Header`, `MainContent` and `Footer` components |
 
-## React Compiler
+`src/App.jsx` is the original Vite starter component, kept for reference.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running it
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+npm run dev       # start the dev server with hot reload
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Then open the URL Vite prints, e.g. `http://localhost:5173/` for the navbar page or
+`http://localhost:5173/react_facts_project.html` for the facts page.
+
+Other scripts:
+
+```bash
+npm run build     # production build into dist/
+npm run preview   # serve the production build locally
+npm run lint      # lint with Oxlint
+```
+
+## Stack
+
+- React 19
+- Vite 8 with `@vitejs/plugin-react`
+- Oxlint
+- Bootstrap 4 (from CDN, for the navbar page)
