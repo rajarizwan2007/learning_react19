@@ -2,13 +2,7 @@ import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
 
-root.render(
-    <main>
-        <Header />
-        <MainContent />
-        <Footer />
-    </main>
-);
+root.render(<Page />);
 
 function MainContent(){
     return (
@@ -55,9 +49,11 @@ function Footer(){
 }
 
 function Page(){
-    <>
-    <Header />
-    <MainContent />
-    <Footer />
-    </>
+    return (
+        <main>
+            <Header />
+            <MainContent />
+            <Footer />
+        </main>
+    );
 }
